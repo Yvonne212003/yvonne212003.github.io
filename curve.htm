@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    div {
+        width: 300px;
+        height: 400px;
+        background-color: lightgrey;
+        background-image: url(photo/johannes-plenio-hvrpOmuMrAI-unsplash.jpg);
+        background-size: cover;
+        border-top-left-radius: 150px;
+        border-top-right-radius: 150px;
+        position: relative;
+    }
+    div::after {
+        content: " ";
+        display: block;
+        width: 300px;
+        height: 400px;
+        border-top-left-radius: 150px;
+        border-top-right-radius: 150px;
+        background-color: darkgreen;
+        position: absolute;
+        z-index: -1;
+        left: 20px; top: 20px;
+    }
+</style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+body {
+    font-family: sans-serif;
+    background-color: lightseagreen;
+}
+.bx-wrapper {
+    margin: 0 auto;
+    box-shadow: 0 0 0 0;
+    border: 0;
+}
+.bx-wrapper .bx-pager {
+    bottom: 20px;
+}
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+    background-color: white;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--CSS 的部分-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <!--自己的 CSS 要放在 bxSlider CSS 的後面-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HTML 的部分-->
+    <section class="slider">
+        <div><img src="photo/johannes-plenio-hvrpOmuMrAI-unsplash.jpg" alt=""></div>
+        <div><img src="photo/kazuend-19SC2oaVZW0-unsplash.jpg" alt=""></div>
+        <div><img src="photo/ricardo-gomez-angel-eysPNWkrqtk-unsplash.jpg" alt=""></div>
+        <div><img src="photo/sebastian-unrau-sp-p7uuT0tw-unsplash.jpg" alt=""></div>
+    </section>
+
+    <!-- JavaScript 的部分-->
+    <script src="jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!--功能設定的部分-->
+    <script>
+        $(document).ready(function(){
+          $(".slider").bxSlider({
+            auto: true, //自動播放
+            //mode: 'fade',//滾動模式
+            pager: true,//照片下方的小圓點
+            speed: 1000,//滾動速度
+            slideWidth: 640 //幻燈片寬度
+          });
+        });
+    </script>
+</body>
+</html>
