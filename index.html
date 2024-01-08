@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蔡瑀恩的期末考</title>
+    <link rel="stylesheet" href="style.css">
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&display=swap');
+    
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@600&display=swap');
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+    font-family: 'Noto Sans TC', sans-serif;} 
+        
+    
+    * {box-sizing: border-box;}/*無敵星星的部分*/
+        
+
+    body, h1, h2, h3, p ,ul {
+        margin: 0;/*清除預設的 margin*/
+    }
+
+    .wrap {
+        width: 900px;
+        margin-inline: auto;/*區塊左右置中*/
+    }
+        
+    
+    header {
+        display: flex;/*橫排*/
+        align-items: center;/*讓Logo 跟 Menu 上下居中*/
+        padding: 10px 20px;
+        background-color: antiquewhite;
+        border-radius: 20px;
+        margin-top: 20px;
+        position: sticky;
+        top: 20px;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+        width: 900px;
+        height: 100px;
+        position: sticky;
+        }
+
+    header h1.logo {
+        margin-right: auto;/*撐開中間的距離*/
+
+    }
+   
+        
+    header a {
+        color: #11110b;
+        text-decoration: none;/*清除超連結的底線*/
+        display: block;/*把超連結轉換成區塊(才可以設定寬高)*/
+    }
+
+    .menu ul {
+        display: flex;/*讓選單也橫排*/
+        gap: 16px;/*關於間格距離的部分*/
+        list-style: none;/*隱藏列表圓點*/
+    }
+
+    .menu a {
+        font-size: 20px;
+        padding: 6px 16px;/*把可以點選的範圍撐大*/
+        background-color:#dad39c;
+        border-radius: 20px;
+    }
+    .menu a:hover {/*滑鼠移上去之後的狀態*/
+        color: aliceblue;
+        background-color: #706d40;
+    }
+        
+    a.anchor {/*自訂定位點*/
+        position: relative;
+        top: -114px;/*把定位點往上調*/
+        visibility: hidden;/*可見度為零*/
+    }
+
+    .wrap-all {
+        width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #F5F5F5;
+        border-radius: 16px;
+    }
+    
+    .main-card {
+        font-size: 25px;
+        font-weight: 400;
+        width: 860px;
+        height: 300px;
+        padding-top: 50px; 
+        padding-left: 80px;
+        margin-bottom: 20px;
+        border-radius: 16px;
+        background-image: url(image/主BN.jpg);
+        background-size: cover;
+        line-height: 150%;
+    }
+            
+    .card {
+        width: 210px;
+        border-radius: 16px;
+        overflow: hidden;
+    }
+                
+            
+    .card-image {
+        color: black;
+        font-size: 10px;
+        font-weight: 900;
+        width: 210px;
+        height: 150px;
+        background-size: cover;
+    }
+                
+    .card-01 .card-image {
+        background-image: url(image/裸花束.jpg);
+    }
+            
+    .card-02 .card-image {
+        background-image: url(image/布花束.jpg);
+    }
+            
+    .card-03 .card-image {
+        background-image: url(image/課程圖.jpg);
+    }
+            
+    .card-04 .card-image {
+        background-image: url(image/花裡小學堂.jpg);
+        }
+            
+
+    .card {
+        border-radius: 16px;
+        background-color: rgb(255, 255, 255);
+        width: 210px;
+        overflow: hidden;
+    }
+    
+    .card-intro {
+    
+        font-size: 20px;
+        line-height: 90%;
+        padding: 20px;
+        padding-top: 0px;
+        color: #104a1f;
+    }
+    
+    section {
+        display: flex;
+        gap: 10px;
+        width: 900px;
+    }
+    
+    footer {
+        text-align: center;
+        color: #494d3c;
+    }
+
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <h1 class="logo">
+               <a href="#"> 花裡</a>
+            </h1>
+            <nav class="menu">
+            <ul>
+                <li><a href="#about">Flower</a></li>
+                <li><a href="#news">Plants</a></li>
+                <li><a href="#product">Course</a></li>
+                <li><a href="#service">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            </nav>
+        </header>
+
+        <div class="wrap-all">
+            <div class="main-card">
+                </div>
+            <section>
+    
+                <div class="card card-01">
+                    <div class="card-image"></div>
+                    <div class="card-intro">
+                        <h4>裸花束</h4>
+                        <h6>NAKED 回歸到純粹</h6>
+                        <h6>$1,000</h6>
+                        
+                    </div>
+                </div>
+    
+                <div class="card card-02">
+                    <div class="card-image"></div>
+                    <div class="card-intro">
+                        <h4>包裝花束</h4>
+                        <h6>CANVAS布品花束</h6>
+                        <h6>$1,500</h6>
+                    </div>
+                </div>
+    
+                <div class="card card-03">
+                    <div class="card-image"></div>
+                    <div class="card-intro">
+                        <h4>課程</h4>
+                        <h6>Green life </h6>
+                        <h6>生活花藝課程 </h6>
+                    </div>
+                </div>
+    
+                <div class="card card-04">
+                    <div class="card-image"></div>
+                    <div class="card-intro">
+                        <h4>花裡小學堂</h4>
+                        <h6>花藝可以很簡單</h6>
+                        <h6>教學影片免費看</h6>
+                    </div>
+                </div>
+            </section>
+    
+   
+
+        <footer>
+            台南市北區東豐路255號 1F., No. 255, Dongfeng Rd., North Dist., Tainan City 704 , Taiwan (R.O.C.)
+        </footer>
+    </div>
+</body>
+
+</html>
