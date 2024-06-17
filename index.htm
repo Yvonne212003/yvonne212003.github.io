@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duck Duck</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+    <header>
+        <h1>  <a href="index.htm" title="Succulent Gardening Home">Succulent Gardening</a></h1>
+        <nav>
+            <button class="nav-button"><img src="image/img_menu.svg" alt=""></button>
+            <ul class="nav-menu hide">
+                <li><a href="#" title="News">News</a></li>
+                <li><a href="#" title="Plants">Plants</a></li>
+                <li><a href="#" title="Decoration">Decoration</a></li>
+                <li><a href="#" title="About Us">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>My little Garden</h1>
+        <p>1 Daguan Road, Banqiao
+           New Taipei City 220307, Taiwan ROC</p>
+    </main>
+    <section>
+        <div class="card">
+            <picture class="card__image">
+                <source media="(max-width: 727px)" srcset="image/梅花 (1).jpeg">
+                <source media="(min-width: 728px)" srcset="image/梅花 (1).jpeg">
+                <img src="image/梅花 (1).jpeg" alt="How to choose the right plants">
+            </picture>
+            <div class="card__info">
+                <h3>plum bossom</h3>
+                <p>Prunus mume Sieb. et Zucc.</p>
+            </div>
+        </div>
+        <div class="card">
+            <picture class="card__image">
+                <source media="(max-width: 727px)" srcset="image/橘花 (1).jpeg">
+                <source media="(min-width: 728px)" srcset="image/橘花 (1).jpeg">
+                <img src="image/橘花 (1).jpeg" alt="How to choose the right plants">
+            </picture>
+            <div class="card__info">
+                <h3>chrysanthemum</h3>
+                <p>Chrysanthemum × morifolium</p>
+            </div>
+        </div>
+        <div class="card">
+            <picture class="card__image">
+                <source media="(max-width: 727px)" srcset="image/牡丹花 (1).jpeg">
+                <source media="(min-width: 728px)" srcset="image/牡丹花 (1).jpeg">
+                <img src="image/牡丹花 (1).jpeg" alt="How to choose the right plants">
+            </picture>
+            <div class="card__info">
+                <h3>Peony</h3>
+                <p>Paeonia × suffruticosa.</p>
+            </div>
+        </div>
+        <div class="card">
+            <picture class="card__image">
+                <source media="(max-width: 727px)" srcset="image/玫瑰花 (1).jpeg">
+                <source media="(min-width: 728px)" srcset="image/玫瑰花 (1).jpeg">
+                <img src="image/玫瑰花 (1).jpeg" alt="How to choose the right plants">
+            </picture>
+            <div class="card__info">
+                <h3>roses</h3>
+                <p>Rosa rugosa </p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Copyright 2024 Ｍy Garden. All Rights Reserved</p>
+    </footer>
+</div>  
+
+
+
+<script>
+    let myNav = document.querySelector(".nav-menu"); //在 JS 裡定義下拉選單
+    let myButton = document.querySelector(".nav-button");// 在 JS 裡定義漢堡按鈕
+
+    myButton.addEventListener("click", function() { //在 myButton 上安裝事件監聽器，監聽有無被點選的動作
+    myNav.classList.toggle("hide"); //如果有被點選，就在 myNav 的 class 清單中，開關 hide 這個 class
+    });
+</script>
+</body>
+</html>
